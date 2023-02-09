@@ -1,0 +1,13 @@
+{
+	"extends": "@censible/_scaffold/tsconfig.json",
+	"compilerOptions": {
+		"outDir": "lib",
+		"declarationDir": "lib",
+		"lib": [
+			"ESNext",
+			"dom"
+		]
+	},
+	"references": [
+	]
+}
