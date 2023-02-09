@@ -16,7 +16,7 @@ export function CloseDialogHandle($p) {
 				$.preventDefault()
 				if ($p.onclick) $p.onclick($)
 			}}
-		>{$p.children || '&#10006;'}</a>
+		>{$p.children || '✖'}</a>
 	]
 }
 //language=CSS
