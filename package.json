@@ -1,7 +1,13 @@
 {
 	"name": "@ctx-core/dialog-ui-solid",
+	"version": "1.0.2",
 	"type": "module",
-	"version": "1.0.1",
+	"types": "./src/index.d.ts",
+	"svelte": "./src/index.js",
+	"exports": {
+		".": "./src/index.js",
+		"./package.json": "./package.json"
+	},
 	"dependencies": {
 		"@ctx-core/ui-solid": "^6.0.0",
 		"solid-js": "1.6.10"

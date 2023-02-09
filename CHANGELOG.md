@@ -1,5 +1,11 @@
 # @ctx-core/dialog-ui-solid
 
+## 1.0.2
+
+### Patch Changes
+
+- fix: exports
+
 ## 1.0.1
 
 ### Patch Changes
