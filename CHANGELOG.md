@@ -1,5 +1,11 @@
 # @ctx-core/dialog-ui-solid
 
+## 1.1.0
+
+### Minor Changes
+
+- ModalDialog: props: onclose or onClose: required prop
+
 ## 1.0.3
 
 ### Patch Changes

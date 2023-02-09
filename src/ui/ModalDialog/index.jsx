@@ -1,4 +1,4 @@
-import { mergeProps, onCleanup, onMount, } from 'solid-js'
+import { createMemo, mergeProps, onCleanup, onMount, } from 'solid-js'
 import { Style_ } from '@ctx-core/ui-solid'
 import { CloseDialogHandle } from '../CloseDialogHandle/index.js'
 /** @type {import('./index.d.ts').ModalDialog__props_T}ModalDialog__props_T */
@@ -14,6 +14,7 @@ export function ModalDialog($_p) {
 		full__max_width: '1215px',
 		header__border_bottom: `1px solid #96ADB8`,
 	}, $_p)
+	const onclose_ = createMemo(()=>$p.onclose||$p.onClose)
 	onMount(()=>window.addEventListener('keydown', window__onKeyDown))
 	onCleanup(()=>window.removeEventListener('keydown', window__onKeyDown))
 	/**
@@ -22,7 +23,7 @@ export function ModalDialog($_p) {
 	function window__onKeyDown(event) {
 		const { key } = event
 		if (key === 'Escape') {
-			$p.onClose()
+			onclose_()()
 		}
 	}
 	return [
@@ -35,7 +36,7 @@ export function ModalDialog($_p) {
 		<div class={`ModalDialog dialog-content ${$p.class}`}>
 			<div class="header">
 				<h3>{$p.title}</h3>
-				<CloseDialogHandle onclick={()=>$p.onClose()}/>
+				<CloseDialogHandle onclick={()=>onclose_()()}/>
 			</div>
 			<div class="body">
 				{$p.children}
