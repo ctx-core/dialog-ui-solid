@@ -1,9 +1,9 @@
 {
 	"name": "@ctx-core/dialog-ui-solid",
 	"type": "module",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"dependencies": {
-		"@ctx-core/ui-solid": "^5.3.2",
+		"@ctx-core/ui-solid": "^6.0.0",
 		"solid-js": "1.6.10"
 	},
 	"devDependencies": {
