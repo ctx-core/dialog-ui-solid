@@ -1,5 +1,11 @@
 # @ctx-core/dialog-ui-solid
 
+## 1.0.3
+
+### Patch Changes
+
+- ModalDialog: fix: argument type
+
 ## 1.0.2
 
 ### Patch Changes

@@ -1,5 +1,5 @@
 import type { Component, JSX, ParentProps, VoidProps } from 'solid-js'
-export function ModalDialog($_p):JSX.Element
+export function ModalDialog($_p:ModalDialog__props_T):JSX.Element
 export type ModalDialog__props_T = ParentProps<{
 	title:string
 	onClose:()=>void
