@@ -1,5 +1,13 @@
 # @ctx-core/dialog-ui-solid
 
+## 1.1.6
+
+### Patch Changes
+
+- index.js=>index.jsx
+- Updated dependencies
+  - @ctx-core/ui-solid@6.0.4
+
 ## 1.1.5
 
 ### Patch Changes
