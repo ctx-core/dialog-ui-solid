@@ -1,2 +1,2 @@
 export * from './CloseDialogHandle/index.jsx'
-export * from './ModalDialog/index.js'
+export * from './ModalDialog/index.jsx'
