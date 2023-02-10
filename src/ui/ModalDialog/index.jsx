@@ -1,6 +1,6 @@
 import { createMemo, mergeProps, onCleanup, onMount, } from 'solid-js'
 import { Style_ } from '@ctx-core/ui-solid'
-import { CloseDialogHandle } from '../CloseDialogHandle/index.js'
+import { CloseDialogHandle } from '../CloseDialogHandle/index.jsx'
 /** @type {import('./index.d.ts').ModalDialog__props_T}ModalDialog__props_T */
 /**
  * @param $_p{ModalDialog__props_T}

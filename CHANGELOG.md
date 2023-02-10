@@ -1,5 +1,11 @@
 # @ctx-core/dialog-ui-solid
 
+## 1.1.4
+
+### Patch Changes
+
+- ModalDialog: fix: import
+
 ## 1.1.3
 
 ### Patch Changes
