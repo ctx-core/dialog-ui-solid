@@ -1,5 +1,11 @@
 # @ctx-core/dialog-ui-solid
 
+## 1.2.0
+
+### Minor Changes
+
+- ModalDialog: props: + ref?:($:HTMLDivElement)=>void
+
 ## 1.1.11
 
 ### Patch Changes

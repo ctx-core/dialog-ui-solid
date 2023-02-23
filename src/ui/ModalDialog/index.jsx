@@ -33,7 +33,7 @@ export function ModalDialog($_p) {
 			full__max_width={$p.full__max_width}
 			header__border_bottom={$p.header__border_bottom}
 		/>,
-		<div class={`ModalDialog dialog-content ${$p.class}`}>
+		<div ref={$p.ref} class={`ModalDialog dialog-content ${$p.class}`}>
 			<div class="header">
 				<h3>{$p.title}</h3>
 				<CloseDialogHandle onclick={()=>onclose_()()}/>
