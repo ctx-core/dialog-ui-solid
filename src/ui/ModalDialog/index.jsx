@@ -35,7 +35,7 @@ export function ModalDialog($_p) {
 		/>,
 		<div ref={$p.ref} class={`ModalDialog dialog-content ${$p.class}`}>
 			<div class="header">
-				<h3>{$p.title}</h3>
+				<div>{$p.title}</div>
 				<CloseDialogHandle onclick={()=>onclose_()()}/>
 			</div>
 			<div class="body">
@@ -83,17 +83,17 @@ const ModalDialogStyle = /** @type {import('./index.d.ts').ModalDialogStyle_T} *
 		height: 3.2rem;
 		padding: 1rem;
 	}
-	.ModalDialog > .header > * {
+	.ModalDialog > .header > div, .ModalDialog > .header > a {
 		display: flex;
 		align-items: center;
 		margin: 0;
 	}
+	.ModalDialog > .header > div {
+		flex: 1;
+	}
 	.ModalDialog > .header .close {
 		flex-grow: 0;
 		margin-right: 0.4rem;
-	}
-	.ModalDialog > .header h3 {
-		flex: 1;
 	}
 	.ModalDialog > .body {
 		flex: 1;
