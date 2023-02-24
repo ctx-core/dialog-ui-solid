@@ -1,5 +1,24 @@
 # @ctx-core/dialog-ui-solid
 
+## 1.3.0
+
+### Minor Changes
+
+- ModalDialog: support custom hydration:
+
+  - ModalDialog\_\_bind_dom
+  - ModalDialog\_\_open
+  - ModalDialog\_\_close
+
+- CloseDialogHandle: support custom hydration:
+
+  - CloseDialogHandle\_\_bind_dom
+
+### Patch Changes
+
+- ∋ @ctx-core/function,@ctx-core/nanostores,@ctx-core/object
+- ModalDialog: .header: fix: styling
+
 ## 1.2.3
 
 ### Patch Changes
