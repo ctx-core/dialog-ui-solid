@@ -1,5 +1,11 @@
 # @ctx-core/dialog-ui-solid
 
+## 1.3.2
+
+### Patch Changes
+
+- CloseDialogHandle\_\_bind_dom: fix: + type declaration
+
 ## 1.3.1
 
 ### Patch Changes

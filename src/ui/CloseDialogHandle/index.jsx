@@ -42,7 +42,7 @@ const Style = Style_(()=>`
  */
 export function CloseDialogHandle__bind_dom(CloseDialogHandle__el_a) {
 	if (isServer) return
-	if (!CloseDialogHandle__el_a) CloseDialogHandle__el_a = document.querySelectorAll('.CloseDialogHandle')
+	if (!CloseDialogHandle__el_a) CloseDialogHandle__el_a = Array.from(document.querySelectorAll('.CloseDialogHandle'))
 	for (const CloseDialogHandle__el of CloseDialogHandle__el_a) {
 		CloseDialogHandle__el.addEventListener('click',
 			evt=>evt.preventDefault())
