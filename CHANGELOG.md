@@ -1,5 +1,11 @@
 # @ctx-core/dialog-ui-solid
 
+## 1.3.1
+
+### Patch Changes
+
+- package.json: fix: @ctx-core/object dependency
+
 ## 1.3.0
 
 ### Minor Changes
