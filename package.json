@@ -17,6 +17,8 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
+		"@ctx-core/function": "^21.8.0",
+		"@ctx-core/nanostores": "^2.2.31",
 		"@ctx-core/ui-solid": "^6.0.12",
 		"solid-js": "1.6.11"
 	},
