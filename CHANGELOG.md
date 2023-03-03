@@ -1,5 +1,17 @@
 # @ctx-core/dialog-ui-solid
 
+## 1.3.10
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/nanostores@3.0.0
+  - @ctx-core/object@27.0.0
+  - @ctx-core/ui-solid@6.0.20
+
 ## 1.3.9
 
 ### Patch Changes
