@@ -1,5 +1,19 @@
 # @ctx-core/dialog-ui-solid
 
+## 2.0.0
+
+### Major Changes
+
+- ModalDialog\_\_bind_dom: Breaking: bind_dom_T: arguments: (CloseDialogHandle:HTMLElement)
+- CloseDialogHandle\_\_bind_dom: Breaking: bind_dom_T: arguments: (CloseDialogHandle:HTMLElement)
+
+### Patch Changes
+
+- ∋ @ctx-core/dom: bind_dom_T
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/dom@12.1.2
+
 ## 1.3.30
 
 ### Patch Changes
