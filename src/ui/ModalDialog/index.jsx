@@ -23,20 +23,6 @@ export function ModalDialog($_p) {
 		full__max_width: '1215px',
 		header__border_bottom: `1px solid #96ADB8`,
 	}, $_p)
-	const ctx = $p.ctx || ctx__Context__use()
-	/** @type {Signal<HTMLDivElement>} */
-	const [ref_, ref__set] =
-		createSignal()
-	createComputed(()=>{
-		if ($p.ref__set) {
-			$p.ref__set(ref_())
-		}
-	})
-	createComputed(()=>{
-		if (ref_()) {
-			ModalDialog__bind_dom(ctx, [ref_()])
-		}
-	})
 	const onclose_ = createMemo(()=>$p.onclose || $p.onClose || noop)
 	/**
 	 * @param event{KeyboardEvent}
@@ -49,7 +35,12 @@ export function ModalDialog($_p) {
 			header__border_bottom={$p.header__border_bottom}
 		/>,
 		<div
-			ref={$=>ref__set($)}
+			ref={$=>{
+				if ($p.ref__set) $p.ref__set($)
+				queueMicrotask(()=>
+					ModalDialog__bind_dom($))
+			}}
+			data-bind_dom={ModalDialog__bind_dom.name}
 			class={`ModalDialog dialog-content ${$p.class}`}
 			on:close={$=>onclose_()()}
 		>
@@ -126,21 +117,24 @@ const ModalDialogStyle = /** @type {import('./index.d.ts').ModalDialogStyle_T} *
 	}
 `)
 /**
+ * @param {HTMLElement}[ModalDialog]
  * @param {Ctx}ctx
- * @param {HTMLElement[]}[ModalDialog_a]
  */
-export function ModalDialog__bind_dom(ctx, ModalDialog_a) {
+export function ModalDialog__bind_dom(ModalDialog, ctx) {
 	if (isServer) return
-	if (!ModalDialog_a) ModalDialog_a = Array.from(document.querySelectorAll('.ModalDialog'))
-	for (const ModalDialog of ModalDialog_a) {
-		ModalDialog
-			.querySelector('.CloseDialogHandle')
-			.addEventListener('click', evt=>{
-				evt.preventDefault()
-				ModalDialog__close(ctx)
-			})
-	}
+	ModalDialog
+		.querySelector('.CloseDialogHandle')
+		.addEventListener('click', evt=>{
+			evt.preventDefault()
+			ModalDialog__close(ctx)
+		})
 }
+/**
+ * @param {Ctx}ctx
+ * @param {HTMLElement}ModalDialog
+ * @returns {number|null}
+ * @constructor
+ */
 export function ModalDialog__open(ctx, ModalDialog) {
 	ModalDialog__bind_window(ctx)
 	const ModalDialog__stack = ModalDialog__stack_(ctx)

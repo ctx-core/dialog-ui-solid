@@ -1,4 +1,4 @@
-import { createComputed, createMemo, createSignal } from 'solid-js'
+import { createMemo } from 'solid-js'
 import { Style_ } from '@ctx-core/ui-solid'
 import { isServer } from 'solid-js/web'
 /** @typedef {import('solid-js').JSX}JSX */
@@ -8,20 +8,16 @@ import { isServer } from 'solid-js/web'
  * @returns {JSX.Element[]}
  */
 export function CloseDialogHandle($p) {
-	/** @type {Signal<HTMLElement>} */
-	const [ref_, ref__set] =
-		createSignal()
 	const tabindex_ = createMemo(()=>$p.tabindex || '0')
-	createComputed(()=>{
-		if (ref_()) {
-			CloseDialogHandle__bind_dom([ref_()])
-		}
-	})
 	/** @type {JSX.Element[]} */
 	return [
 		/** @type {JSX.Element} */<Style/>,
 		/** @type {JSX.Element} */<a
-			ref={$=>ref__set($)}
+			ref={$=>{
+				queueMicrotask(()=>
+					CloseDialogHandle__bind_dom($))
+			}}
+			data-bind_dom={CloseDialogHandle__bind_dom.name}
 			href="."
 			class={`close CloseDialogHandle ${$p.class || ''}`}
 			tabindex={tabindex_()}
@@ -38,13 +34,10 @@ const Style = Style_(()=>`
 	}
 `)
 /**
- * @param {HTMLElement[]}[CloseDialogHandle__el_a]
+ * @param {HTMLElement}[CloseDialogHandle]
  */
-export function CloseDialogHandle__bind_dom(CloseDialogHandle__el_a) {
+export function CloseDialogHandle__bind_dom(CloseDialogHandle) {
 	if (isServer) return
-	if (!CloseDialogHandle__el_a) CloseDialogHandle__el_a = Array.from(document.querySelectorAll('.CloseDialogHandle'))
-	for (const CloseDialogHandle__el of CloseDialogHandle__el_a) {
-		CloseDialogHandle__el.addEventListener('click',
-			evt=>evt.preventDefault())
-	}
+	CloseDialogHandle.addEventListener('click',
+		evt=>evt.preventDefault())
 }
