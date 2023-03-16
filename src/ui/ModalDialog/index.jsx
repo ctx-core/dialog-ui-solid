@@ -1,10 +1,12 @@
 import { noop } from '@ctx-core/function'
 import { atom_ } from '@ctx-core/nanostores'
 import { be_ } from '@ctx-core/object'
-import { ctx__Context__use, Style_ } from '@ctx-core/ui-solid'
-import { createComputed, createMemo, createSignal, mergeProps, } from 'solid-js'
+import { Style_ } from '@ctx-core/ui-solid'
+import { createMemo, mergeProps, } from 'solid-js'
 import { isServer } from 'solid-js/web'
 import { CloseDialogHandle } from '../CloseDialogHandle/index.jsx'
+import { id__bind_dom_ } from '@ctx-core/dom'
+/** @typedef {import('@ctx-core/dom').arg2__id__bind_dom_T}arg2__id__bind_dom_T */
 /** @typedef {import('@ctx-core/nanostores').WritableAtom_}WritableAtom_ */
 /** @typedef {import('@ctx-core/object').Be}Be */
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
@@ -116,19 +118,18 @@ const ModalDialogStyle = /** @type {import('./index.d.ts').ModalDialogStyle_T} *
 		overflow: hidden;
 	}
 `)
-/**
- * @param {HTMLElement}[ModalDialog]
- * @param {Ctx}ctx
- */
-export function ModalDialog__bind_dom(ModalDialog, ctx) {
-	if (isServer) return
-	ModalDialog
-		.querySelector('.CloseDialogHandle')
-		.addEventListener('click', evt=>{
-			evt.preventDefault()
-			ModalDialog__close(ctx)
-		})
-}
+/** @type {arg2__id__bind_dom_T<HTMLElement, 'ModalDialog__bind_dom'>} */
+export const ModalDialog__bind_dom = id__bind_dom_(
+	'ModalDialog__bind_dom',
+	(ModalDialog, ctx)=>{
+		if (isServer) return
+		ModalDialog
+			.querySelector('.CloseDialogHandle')
+			.addEventListener('click', evt=>{
+				evt.preventDefault()
+				ModalDialog__close(ctx)
+			})
+	})
 /**
  * @param {Ctx}ctx
  * @param {HTMLElement}ModalDialog

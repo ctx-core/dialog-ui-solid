@@ -1,5 +1,13 @@
 # @ctx-core/dialog-ui-solid
 
+## 2.0.5
+
+### Patch Changes
+
+- CloseDialogHandle\_\_bind_dom,ModalDialog\_\_bind_dom: fix: ∋ id\_\_bind_dom\_
+- Updated dependencies
+  - @ctx-core/dom@13.2.0
+
 ## 2.0.4
 
 ### Patch Changes

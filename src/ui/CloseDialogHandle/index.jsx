@@ -1,6 +1,8 @@
 import { createMemo } from 'solid-js'
 import { Style_ } from '@ctx-core/ui-solid'
 import { isServer } from 'solid-js/web'
+import { id__bind_dom_ } from '@ctx-core/dom'
+/** @typedef {import('@ctx-core/dom').arg1__bind_dom_T}arg1__bind_dom_T */
 /** @typedef {import('solid-js').JSX}JSX */
 /** @typedef {import('solid-js').Signal}Signal */
 /**
@@ -33,11 +35,11 @@ const Style = Style_(()=>`
 		text-decoration: none;
 	}
 `)
-/**
- * @param {HTMLElement}[CloseDialogHandle]
- */
-export function CloseDialogHandle__bind_dom(CloseDialogHandle) {
-	if (isServer) return
-	CloseDialogHandle.addEventListener('click',
-		evt=>evt.preventDefault())
-}
+/** @type {arg1__bind_dom_T<HTMLElement, 'CloseDialogHandle__bind_dom'>} */
+export const CloseDialogHandle__bind_dom = id__bind_dom_(
+	'CloseDialogHandle__bind_dom',
+	CloseDialogHandle=>{
+		if (isServer) return
+		CloseDialogHandle.addEventListener('click',
+			evt=>evt.preventDefault())
+	})
