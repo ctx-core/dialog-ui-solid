@@ -1,5 +1,12 @@
 # @ctx-core/dialog-ui-solid
 
+## 2.0.6
+
+### Patch Changes
+
+- CloseDialogHandle,ModalDialog: fix: data-bind_dom
+- CloseDialogHandle\_\_bind_dom: fix: remove extra old function type declaration
+
 ## 2.0.5
 
 ### Patch Changes
