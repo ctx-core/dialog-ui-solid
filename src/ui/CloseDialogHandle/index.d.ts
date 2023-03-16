@@ -5,7 +5,6 @@ export declare const CloseDialogHandle__bind_dom:arg1__bind_dom_T<
 	HTMLElement,
 	'CloseDialogHandle__bind_dom'
 >
-export declare function CloseDialogHandle__bind_dom(CloseDialogHandle:HTMLElement):void
 export type CloseDialogHandle__props_T = ParentProps<{
 	class?:string
 	tabindex?:string

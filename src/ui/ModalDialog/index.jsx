@@ -1,3 +1,4 @@
+import { id__bind_dom_ } from '@ctx-core/dom'
 import { noop } from '@ctx-core/function'
 import { atom_ } from '@ctx-core/nanostores'
 import { be_ } from '@ctx-core/object'
@@ -5,7 +6,6 @@ import { Style_ } from '@ctx-core/ui-solid'
 import { createMemo, mergeProps, } from 'solid-js'
 import { isServer } from 'solid-js/web'
 import { CloseDialogHandle } from '../CloseDialogHandle/index.jsx'
-import { id__bind_dom_ } from '@ctx-core/dom'
 /** @typedef {import('@ctx-core/dom').arg2__id__bind_dom_T}arg2__id__bind_dom_T */
 /** @typedef {import('@ctx-core/nanostores').WritableAtom_}WritableAtom_ */
 /** @typedef {import('@ctx-core/object').Be}Be */
@@ -42,7 +42,7 @@ export function ModalDialog($_p) {
 				queueMicrotask(()=>
 					ModalDialog__bind_dom($))
 			}}
-			data-bind_dom={ModalDialog__bind_dom.name}
+			data-bind_dom={ModalDialog__bind_dom.id}
 			class={`ModalDialog dialog-content ${$p.class}`}
 			on:close={$=>onclose_()()}
 		>
