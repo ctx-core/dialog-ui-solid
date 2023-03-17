@@ -1,5 +1,26 @@
 # @ctx-core/dialog-ui-solid
 
+## 2.1.0
+
+### Minor Changes
+
+- - CloseDialogHandle\_\_onbind: aliased by CloseDialogHandle\_\_bind_dom
+- - ModalDialog\_\_onbind: aliased by ModalDialog\_\_bind_dom
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/dom@13.3.0
+
 ## 2.0.8
 
 ### Patch Changes
