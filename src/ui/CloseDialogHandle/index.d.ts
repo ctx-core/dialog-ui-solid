@@ -1,9 +1,9 @@
-import type { arg1__bind_dom_T } from '@ctx-core/dom'
+import type { arg1__dom__handler_T } from '@ctx-core/dom'
 import type { JSX, ParentProps } from 'solid-js'
 export function CloseDialogHandle($p:CloseDialogHandle__props_T):JSX.Element[]
-export declare const CloseDialogHandle__bind_dom:arg1__bind_dom_T<
+export declare const CloseDialogHandle__onbind:arg1__dom__handler_T<
 	HTMLElement,
-	'CloseDialogHandle__bind_dom'
+	'CloseDialogHandle__onbind'
 >
 export type CloseDialogHandle__props_T = ParentProps<{
 	class?:string

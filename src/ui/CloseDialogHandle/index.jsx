@@ -1,8 +1,8 @@
-import { id__bind_dom_ } from '@ctx-core/dom'
+import { id__dom__handler_ } from '@ctx-core/dom'
 import { Style_ } from '@ctx-core/ui-solid'
 import { createMemo } from 'solid-js'
 import { isServer } from 'solid-js/web'
-/** @typedef {import('@ctx-core/dom').arg1__id__bind_dom_T}arg1__id__bind_dom_T */
+/** @typedef {import('@ctx-core/dom').arg1__id__dom__handler_T}arg1__id__dom__bind_T */
 /** @typedef {import('solid-js').JSX}JSX */
 /** @typedef {import('solid-js').Signal}Signal */
 /**
@@ -17,9 +17,9 @@ export function CloseDialogHandle($p) {
 		/** @type {JSX.Element} */<a
 			ref={$=>{
 				queueMicrotask(()=>
-					CloseDialogHandle__bind_dom($))
+					CloseDialogHandle__onbind($))
 			}}
-			data-bind_dom={CloseDialogHandle__bind_dom.id}
+			data-onbind={CloseDialogHandle__onbind.id}
 			href="."
 			class={`close CloseDialogHandle ${$p.class || ''}`}
 			tabindex={tabindex_()}
@@ -35,11 +35,14 @@ const Style = Style_(()=>`
 		text-decoration: none;
 	}
 `)
-/** @type {arg1__id__bind_dom_T<HTMLElement, 'CloseDialogHandle__bind_dom'>} */
-export const CloseDialogHandle__bind_dom = id__bind_dom_(
-	'CloseDialogHandle__bind_dom',
+/** @type {arg1__id__dom__bind_T<HTMLElement, 'CloseDialogHandle__onbind'>} */
+export const CloseDialogHandle__onbind = id__dom__handler_(
+	'CloseDialogHandle__onbind',
 	CloseDialogHandle=>{
 		if (isServer) return
 		CloseDialogHandle.addEventListener('click',
 			evt=>evt.preventDefault())
 	})
+export {
+	CloseDialogHandle__onbind as CloseDialogHandle__bind_dom,
+}

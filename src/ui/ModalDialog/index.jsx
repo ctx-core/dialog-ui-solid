@@ -1,4 +1,4 @@
-import { id__bind_dom_ } from '@ctx-core/dom'
+import { id__dom__handler_ } from '@ctx-core/dom'
 import { noop } from '@ctx-core/function'
 import { atom_ } from '@ctx-core/nanostores'
 import { be_ } from '@ctx-core/object'
@@ -6,7 +6,7 @@ import { Style_ } from '@ctx-core/ui-solid'
 import { createMemo, mergeProps, } from 'solid-js'
 import { isServer } from 'solid-js/web'
 import { CloseDialogHandle } from '../CloseDialogHandle/index.jsx'
-/** @typedef {import('@ctx-core/dom').arg2__id__bind_dom_T}arg2__id__bind_dom_T */
+/** @typedef {import('@ctx-core/dom').arg2__id__dom__handler_T}arg2__id__dom__bind_T */
 /** @typedef {import('@ctx-core/nanostores').WritableAtom_}WritableAtom_ */
 /** @typedef {import('@ctx-core/object').Be}Be */
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
@@ -40,9 +40,9 @@ export function ModalDialog($_p) {
 			ref={$=>{
 				if ($p.ref__set) $p.ref__set($)
 				queueMicrotask(()=>
-					ModalDialog__bind_dom($))
+					ModalDialog__onbind($))
 			}}
-			data-bind_dom={ModalDialog__bind_dom.id}
+			data-onbind={ModalDialog__onbind.id}
 			class={`ModalDialog dialog-content ${$p.class}`}
 			on:close={$=>onclose_()()}
 		>
@@ -118,9 +118,9 @@ const ModalDialogStyle = /** @type {import('./index.d.ts').ModalDialogStyle_T} *
 		overflow: hidden;
 	}
 `)
-/** @type {arg2__id__bind_dom_T<HTMLElement, 'ModalDialog__bind_dom'>} */
-export const ModalDialog__bind_dom = id__bind_dom_(
-	'ModalDialog__bind_dom',
+/** @type {arg2__id__dom__bind_T<HTMLElement, 'ModalDialog__onbind'>} */
+export const ModalDialog__onbind = id__dom__handler_(
+	'ModalDialog__onbind',
 	(ModalDialog, ctx)=>{
 		if (isServer) return
 		ModalDialog
@@ -130,6 +130,9 @@ export const ModalDialog__bind_dom = id__bind_dom_(
 				ModalDialog__close(ctx)
 			})
 	})
+export {
+	ModalDialog__onbind as ModalDialog__bind_dom,
+}
 /**
  * @param {Ctx}ctx
  * @param {HTMLElement}ModalDialog
