@@ -1,5 +1,23 @@
 # @ctx-core/dialog-ui-solid
 
+## 2.2.0
+
+### Minor Changes
+
+- - onCleanup(()=>unbind\_\_dispatch($, ctx)):
+
+    CloseDialogHandle
+    ModalDialog
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/dom@13.4.0
+
 ## 2.1.0
 
 ### Minor Changes
