@@ -1,6 +1,6 @@
-import { id__dom__handler_ } from '@ctx-core/dom'
-import { Style_ } from '@ctx-core/ui-solid'
-import { createMemo } from 'solid-js'
+import { id__dom__handler_, unbind__dispatch } from '@ctx-core/dom'
+import { ctx__Context__use, Style_ } from '@ctx-core/ui-solid'
+import { createMemo, onCleanup } from 'solid-js'
 import { isServer } from 'solid-js/web'
 /** @typedef {import('@ctx-core/dom').arg1__id__dom__handler_T}arg1__id__dom__bind_T */
 /** @typedef {import('solid-js').JSX}JSX */
@@ -10,6 +10,7 @@ import { isServer } from 'solid-js/web'
  * @returns {JSX.Element[]}
  */
 export function CloseDialogHandle($p) {
+	const ctx = ctx__Context__use()
 	const tabindex_ = createMemo(()=>$p.tabindex || '0')
 	/** @type {JSX.Element[]} */
 	return [
@@ -18,6 +19,7 @@ export function CloseDialogHandle($p) {
 			ref={$=>{
 				queueMicrotask(()=>
 					CloseDialogHandle__onbind($))
+				onCleanup(()=>unbind__dispatch($, ctx))
 			}}
 			data-onbind={CloseDialogHandle__onbind.id}
 			href="."

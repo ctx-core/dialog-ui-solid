@@ -1,9 +1,9 @@
-import { id__dom__handler_ } from '@ctx-core/dom'
+import { id__dom__handler_, unbind__dispatch } from '@ctx-core/dom'
 import { noop } from '@ctx-core/function'
 import { atom_ } from '@ctx-core/nanostores'
 import { be_ } from '@ctx-core/object'
-import { Style_ } from '@ctx-core/ui-solid'
-import { createMemo, mergeProps, } from 'solid-js'
+import { ctx__Context__use, Style_ } from '@ctx-core/ui-solid'
+import { createMemo, mergeProps, onCleanup, } from 'solid-js'
 import { isServer } from 'solid-js/web'
 import { CloseDialogHandle } from '../CloseDialogHandle/index.jsx'
 /** @typedef {import('@ctx-core/dom').arg2__id__dom__handler_T}arg2__id__dom__bind_T */
@@ -18,6 +18,7 @@ import { CloseDialogHandle } from '../CloseDialogHandle/index.jsx'
  * @constructor
  */
 export function ModalDialog($_p) {
+	const ctx = ctx__Context__use()
 	const $p = mergeProps({
 		class: '',
 		width: '50rem',
@@ -41,6 +42,7 @@ export function ModalDialog($_p) {
 				if ($p.ref__set) $p.ref__set($)
 				queueMicrotask(()=>
 					ModalDialog__onbind($))
+				onCleanup(()=>unbind__dispatch($, ctx))
 			}}
 			data-onbind={ModalDialog__onbind.id}
 			class={`ModalDialog dialog-content ${$p.class}`}
