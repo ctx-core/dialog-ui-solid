@@ -1,5 +1,13 @@
 # @ctx-core/dialog-ui-solid
 
+## 2.2.25
+
+### Patch Changes
+
+- @ctx-core/ui-solid: ^7.1.1 -> ^7.1.2
+- Updated dependencies
+  - @ctx-core/dom@14.1.4
+
 ## 2.2.24
 
 ### Patch Changes
