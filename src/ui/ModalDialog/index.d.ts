@@ -6,8 +6,14 @@ export declare const ModalDialog__onbind: arg2__id__dom__handler_T<
 	HTMLElement,
 	'ModalDialog__onbind'
 >
-export declare function ModalDialog__open(ctx:Ctx, ModalDialog:HTMLElement):number|null
-export declare function ModalDialog__close(ctx:Ctx, ModalDialog?:HTMLElement):HTMLElement|undefined
+export declare function ModalDialog__open(
+	ctx:Ctx,
+	ModalDialog:HTMLElement
+):number|null
+export declare function ModalDialog__close(
+	ctx:Ctx,
+	ModalDialog?:HTMLElement
+):HTMLElement|undefined
 export type ModalDialog__props_T = ParentProps<{
 	title:string
 	ctx?:Ctx
