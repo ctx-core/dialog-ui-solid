@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dialog-ui-solid",
-	"version": "2.2.50",
+	"version": "2.2.62",
 	"type": "module",
 	"types": "./src/index.d.ts",
 	"exports": {
