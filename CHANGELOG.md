@@ -1,5 +1,17 @@
 # @ctx-core/dialog-ui-solid
 
+## 2.2.69
+
+### Patch Changes
+
+- @ctx-core/monorepo: ^20.3.3 -> ^20.3.4
+- Updated dependencies
+  - @ctx-core/dom@14.1.31
+  - @ctx-core/function@21.17.19
+  - @ctx-core/nanostores@3.2.22
+  - @ctx-core/object@27.4.23
+  - @ctx-core/ui-solid@7.1.40
+
 ## 2.2.68
 
 ### Patch Changes
