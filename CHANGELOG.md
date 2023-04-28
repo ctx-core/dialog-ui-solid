@@ -1,5 +1,11 @@
 # @ctx-core/dialog-ui-solid
 
+## 2.2.79
+
+### Patch Changes
+
+- package.json: dependencies: - workspace:
+
 ## 2.2.78
 
 ### Patch Changes
