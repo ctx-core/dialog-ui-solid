@@ -1,5 +1,6 @@
 import { id__dom__handler_, unbind__dispatch } from '@ctx-core/dom'
-import { ctx__Context__use, Style_ } from '@ctx-core/ui-solid'
+import { ctx__Context__use } from '@ctx-core/solid-js'
+import { Style_ } from '@ctx-core/ui-solid'
 import { createMemo, onCleanup } from 'solid-js'
 import { isServer } from 'solid-js/web'
 /** @typedef {import('@ctx-core/dom').arg1__id__dom__handler_T}arg1__id__dom__bind_T */
