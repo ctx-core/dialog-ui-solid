@@ -1,5 +1,11 @@
 # @ctx-core/dialog-ui-solid
 
+## 2.2.113
+
+### Patch Changes
+
+- @ctx-core/ui-solid: ^9.0.2 -> ^9.0.3
+
 ## 2.2.112
 
 ### Patch Changes
