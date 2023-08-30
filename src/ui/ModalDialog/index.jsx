@@ -1,8 +1,8 @@
 import { id__dom__handler_, unbind__dispatch } from '@ctx-core/dom'
 import { noop } from '@ctx-core/function'
-import { ctx__Context__use } from '@ctx-core/solid-js'
-import { atom_ } from '@ctx-core/nanostores'
+import { atom_, be_atom_triple_ } from '@ctx-core/nanostores'
 import { be_ } from '@ctx-core/object'
+import { ctx__Context__use } from '@ctx-core/solid-js'
 import { Style_ } from '@ctx-core/ui-solid'
 import { createMemo, mergeProps, onCleanup, } from 'solid-js'
 import { isServer } from 'solid-js/web'
@@ -122,17 +122,17 @@ const ModalDialogStyle = /** @type {import('./index.d.ts').ModalDialogStyle_T} *
 	}
 `)
 /** @type {arg2__id__dom__bind_T<HTMLElement, 'ModalDialog__onbind'>} */
-export const ModalDialog__onbind = id__dom__handler_(
-	'ModalDialog__onbind',
-	(ModalDialog, ctx)=>{
-		if (isServer) return
-		ModalDialog
-			.querySelector('.CloseDialogHandle')
-			.addEventListener('click', evt=>{
-				evt.preventDefault()
-				ModalDialog__close(ctx)
-			})
-	})
+export const ModalDialog__onbind =
+	id__dom__handler_('ModalDialog__onbind',
+		(ModalDialog, ctx)=>{
+			if (isServer) return
+			ModalDialog
+				.querySelector('.CloseDialogHandle')
+				.addEventListener('click', evt=>{
+					evt.preventDefault()
+					ModalDialog__close(ctx)
+				})
+		})
 export {
 	ModalDialog__onbind as ModalDialog__bind_dom,
 }
@@ -200,16 +200,13 @@ const ModalDialog__window__onkeydown_ = be_(
  * @returns number|null
  */
 /**
- * @param {Ctx}ctx
- * @private
- */
-function ModalDialog__stack_(ctx) {
-	return ModalDialog__stack__(ctx).$
-}
-/**
  * @param $_p{ModalDialog__props_T}
  * @return {JSX.Element[]}
  * @private
  */
-const ModalDialog__stack__ = be_('ModalDialog__stack__', ()=>
+const [
+	ModalDialog__stack$_,
+	ModalDialog__stack_,
+	ModalDialog__stack__set,
+] = be_atom_triple_('ModalDialog__stack', ()=>
 	atom_([]))
