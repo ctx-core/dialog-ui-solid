@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dialog-ui-solid",
-	"version": "2.2.187",
+	"version": "2.2.188",
 	"type": "module",
 	"types": "./src/index.d.ts",
 	"exports": {
@@ -22,7 +22,7 @@
 		"@ctx-core/nanostores": "^6.0.9",
 		"@ctx-core/object": "^28.0.7",
 		"@ctx-core/solid-js": "^1.4.12",
-		"@ctx-core/ui-solid": "^15.1.5",
+		"@ctx-core/ui-solid": "^15.1.6",
 		"solid-js": "1.7.12"
 	},
 	"devDependencies": {
