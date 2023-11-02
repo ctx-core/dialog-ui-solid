@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dialog-ui-solid",
-	"version": "2.2.217",
+	"version": "2.2.218",
 	"type": "module",
 	"types": "./src/index.d.ts",
 	"exports": {
@@ -17,7 +17,7 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/dom": "^14.3.2",
+		"@ctx-core/dom": "^14.3.3",
 		"@ctx-core/function": "^21.20.2",
 		"@ctx-core/nanostores": "^7.0.4",
 		"@ctx-core/object": "^28.2.2",
