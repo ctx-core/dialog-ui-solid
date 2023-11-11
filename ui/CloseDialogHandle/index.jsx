@@ -23,7 +23,7 @@ export function CloseDialogHandle($p) {
 				onCleanup(()=>unbind__dispatch($, ctx))
 			}}
 			data-onbind={CloseDialogHandle__onbind.id}
-			href="."
+			href=""
 			class={`close CloseDialogHandle ${$p.class || ''}`}
 			tabindex={tabindex_()}
 			onclick={$=>{

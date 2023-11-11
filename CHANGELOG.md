@@ -1,5 +1,30 @@
 # @ctx-core/dialog-ui-solid
 
+## 2.3.0
+
+### Minor Changes
+
+- fix:types package.json exports
+- tsconfig:
+
+      "module": "ESNext"
+      "moduleResolution": "nodenext"
+      "target": "ESNext"
+
+### Patch Changes
+
+- package.json: - "svelte": "./src/index.js"
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/dom@15.1.0
+  - @ctx-core/function@21.21.0
+  - @ctx-core/nanostores@7.1.0
+  - @ctx-core/object@30.1.0
+  - @ctx-core/solid-js@1.5.0
+  - @ctx-core/ui-solid@21.0.0
+
 ## 2.2.228
 
 ### Patch Changes
