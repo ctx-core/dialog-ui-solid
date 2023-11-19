@@ -7,12 +7,12 @@ import { Style_ } from '@ctx-core/ui-solid'
 import { createMemo, mergeProps, onCleanup, } from 'solid-js'
 import { isServer } from 'solid-js/web'
 import { CloseDialogHandle } from '../CloseDialogHandle/index.jsx'
-/** @typedef {import('@ctx-core/dom').arg2__id__dom__handler_T}arg2__id__dom__bind_T */
-/** @typedef {import('@ctx-core/nanostores').WritableAtom_}WritableAtom_ */
-/** @typedef {import('@ctx-core/object').Be}Be */
-/** @typedef {import('@ctx-core/object').Ctx}Ctx */
-/** @typedef {import('solid-js').Signal}Signal */
-/** @typedef {import('./index.d.ts').ModalDialog__props_T}ModalDialog__props_T */
+/** @typedef {import('@ctx-core/dom').arg2__id__dom__handler_T} */
+/** @typedef {import('@ctx-core/nanostores').WritableAtom_} */
+/** @typedef {import('@ctx-core/object').Be} */
+/** @typedef {import('@ctx-core/object').Ctx} */
+/** @typedef {import('solid-js').Signal} */
+/** @typedef {import('./index.d.ts').ModalDialog__props_T} */
 /**
  * @param {ModalDialog__props_T}$_p
  * @returns {JSX.Element[]}
@@ -185,15 +185,13 @@ function ModalDialog__unbind_window(ctx) {
 	window.removeEventListener('keydown', ModalDialog__window__onkeydown_(ctx))
 }
 /** @type {Be<(event:MouseEvent)=>void>} */
-const ModalDialog__window__onkeydown_ = be_(
-	'ModalDialog__window__onkeydown_',
-	ctx=>
-		evt=>{
-			const { key } = evt
-			if (key === 'Escape') {
-				ModalDialog__close(ctx)
-			}
-		})
+const ModalDialog__window__onkeydown_ = be_(ctx=>
+	evt=>{
+		const { key } = evt
+		if (key === 'Escape') {
+			ModalDialog__close(ctx)
+		}
+	}).config({ id: 'ModalDialog__window__onkeydown_' })
 /**
  * @param {Ctx}ctx
  * @param {HTMLElement}ModalDialog
@@ -208,5 +206,6 @@ const [
 	ModalDialog__stack$_,
 	ModalDialog__stack_,
 	ModalDialog__stack__set,
-] = be_atom_triple_('ModalDialog__stack', ()=>
+] = be_atom_triple_(()=>
 	atom_([]))
+    .config({ id: 'ModalDialog__stack'})
