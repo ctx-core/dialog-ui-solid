@@ -191,7 +191,7 @@ const ModalDialog__window__onkeydown_ = be_(ctx=>
 		if (key === 'Escape') {
 			ModalDialog__close(ctx)
 		}
-	}).config({ id: 'ModalDialog__window__onkeydown_' })
+	}, { id: 'ModalDialog__window__onkeydown_' })
 /**
  * @param {Ctx}ctx
  * @param {HTMLElement}ModalDialog
@@ -202,10 +202,6 @@ const ModalDialog__window__onkeydown_ = be_(ctx=>
  * @return {JSX.Element[]}
  * @private
  */
-const [
-	ModalDialog__stack$_,
-	ModalDialog__stack_,
-	ModalDialog__stack__set,
-] = be_atom_triple_(()=>
-	atom_([]))
-    .config({ id: 'ModalDialog__stack'})
+const [, ModalDialog__stack_,] = be_atom_triple_(()=>
+	atom_([]),
+{ id: 'ModalDialog__stack' })
