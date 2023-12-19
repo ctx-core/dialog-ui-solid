@@ -1,18 +1,17 @@
+/// <reference types="ctx-core" />
+/// <reference types="./index.d.ts" />
 import { id__dom__handler_, unbind__dispatch } from '@ctx-core/dom'
-import { noop } from '@ctx-core/function'
 import { atom_, be_atom_triple_ } from '@ctx-core/nanostores'
-import { be_ } from '@ctx-core/object'
 import { ctx__Context__use } from '@ctx-core/solid-js'
 import { Style_ } from '@ctx-core/ui-solid'
+import { be_ } from 'ctx-core/be'
+import { noop } from 'ctx-core/function'
 import { createMemo, mergeProps, onCleanup, } from 'solid-js'
 import { isServer } from 'solid-js/web'
 import { CloseDialogHandle } from '../CloseDialogHandle/index.jsx'
 /** @typedef {import('@ctx-core/dom').arg2__id__dom__handler_T} */
 /** @typedef {import('@ctx-core/nanostores').WritableAtom_} */
-/** @typedef {import('@ctx-core/object').Be} */
-/** @typedef {import('@ctx-core/object').Ctx} */
 /** @typedef {import('solid-js').Signal} */
-/** @typedef {import('./index.d.ts').ModalDialog__props_T} */
 /**
  * @param {ModalDialog__props_T}$_p
  * @returns {JSX.Element[]}

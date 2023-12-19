@@ -1,5 +1,5 @@
 import type { arg2__id__dom__handler_T } from '@ctx-core/dom'
-import type { Ctx } from '@ctx-core/object'
+import type { Ctx } from 'ctx-core/be'
 import type { Component, JSX, ParentProps, VoidProps } from 'solid-js'
 export function ModalDialog($_p:ModalDialog__props_T):JSX.Element
 export declare const ModalDialog__onbind: arg2__id__dom__handler_T<
