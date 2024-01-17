@@ -1,5 +1,16 @@
 # @ctx-core/dialog-ui-solid
 
+## 2.3.113
+
+### Patch Changes
+
+- ctx-core: ^5.20.0 -> ^5.21.0
+- Updated dependencies
+  - @ctx-core/dom@15.2.29
+  - @ctx-core/nanostores@10.0.43
+  - @ctx-core/solid-js@1.5.101
+  - @ctx-core/ui-solid@21.0.106
+
 ## 2.3.112
 
 ### Patch Changes
