@@ -136,7 +136,7 @@ export {
 	ModalDialog__onbind as ModalDialog__bind_dom,
 }
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  * @param {HTMLElement}ModalDialog
  * @returns {number|null}
  * @constructor
@@ -149,7 +149,7 @@ export function ModalDialog__open(ctx, ModalDialog) {
 	return ModalDialog__stack.push(ModalDialog)
 }
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  * @param {HTMLElement}[ModalDialog]
  */
 export function ModalDialog__close(ctx, ModalDialog) {
@@ -167,7 +167,7 @@ export function ModalDialog__close(ctx, ModalDialog) {
 	return ModalDialog
 }
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  * @private
  */
 function ModalDialog__bind_window(ctx) {
@@ -176,7 +176,7 @@ function ModalDialog__bind_window(ctx) {
 	window.addEventListener('keydown', ModalDialog__window__onkeydown_(ctx))
 }
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  * @private
  */
 function ModalDialog__unbind_window(ctx) {
@@ -192,7 +192,7 @@ const ModalDialog__window__onkeydown_ = be_(ctx=>
 		}
 	}, { id: 'ModalDialog__window__onkeydown_' })
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  * @param {HTMLElement}ModalDialog
  * @returns number|null
  */
