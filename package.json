@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dialog-ui-solid",
-	"version": "2.3.173",
+	"version": "2.3.174",
 	"type": "module",
 	"files": [
 		"*.d.ts",
@@ -24,11 +24,11 @@
 		"disable:test:unit:coverage": "c8 pnpm test:unit"
 	},
 	"dependencies": {
-		"@ctx-core/dom": "^15.3.46",
-		"@ctx-core/nanostores": "^10.0.100",
-		"@ctx-core/solid-js": "^1.5.158",
-		"@ctx-core/ui-solid": "^21.0.163",
-		"ctx-core": "^6.5.5",
+		"@ctx-core/dom": "^15.3.47",
+		"@ctx-core/nanostores": "^10.0.101",
+		"@ctx-core/solid-js": "^1.5.159",
+		"@ctx-core/ui-solid": "^21.0.164",
+		"ctx-core": "^6.5.6",
 		"solid-js": "1.8.15"
 	},
 	"devDependencies": {
