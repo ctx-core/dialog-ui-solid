@@ -1,5 +1,16 @@
 # @ctx-core/dialog-ui-solid
 
+## 2.3.181
+
+### Patch Changes
+
+- solid-js: 1.8.15 -> 1.8.16
+- Updated dependencies
+- Updated dependencies
+  - ctx-core@6.6.2
+  - @ctx-core/solid-js@1.5.166
+  - @ctx-core/ui-solid@21.0.171
+
 ## 2.3.180
 
 ### Patch Changes
