@@ -1,5 +1,12 @@
 # @ctx-core/dialog-ui-solid
 
+## 2.3.182
+
+### Patch Changes
+
+- @ctx-core/nanostores: ^10.0.107 -> ^10.0.108
+- @ctx-core/dom: ^15.3.53 -> ^15.3.54
+
 ## 2.3.181
 
 ### Patch Changes
