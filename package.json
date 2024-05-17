@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dialog-ui-solid",
-	"version": "2.3.211",
+	"version": "2.3.212",
 	"keywords": [
 		"ctx-core",
 		"dialog"
@@ -45,7 +45,7 @@
 		"@ctx-core/dom": "^15.3.81",
 		"@ctx-core/nanostores": "^10.0.136",
 		"@ctx-core/solid-js": "^1.5.195",
-		"@ctx-core/ui-solid": "^21.0.200",
+		"@ctx-core/ui-solid": "^21.0.201",
 		"ctx-core": "^7.2.10",
 		"solid-js": "1.8.17"
 	},
