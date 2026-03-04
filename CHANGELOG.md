@@ -1,5 +1,37 @@
 # @ctx-core/dialog-ui-solid
 
+## 2.3.238
+
+### Patch Changes
+
+- c8: ^10.1.3 -> ^11.0.0
+- solid-js: 1.8.22 -> 1.9.11
+- check-dts: ^0.8.2 -> ^0.9.0
+- tsx: ^4.20.6 -> ^4.21.0
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/nanostores@10.0.158
+  - @ctx-core/solid-js@1.5.218
+  - ctx-core@7.2.33
+  - @ctx-core/dom@15.3.103
+  - @ctx-core/ui-solid@21.0.224
+
 ## 2.3.237
 
 ### Patch Changes
@@ -4842,13 +4874,11 @@
 ### Minor Changes
 
 - ModalDialog: support custom hydration:
-
   - ModalDialog\_\_bind_dom
   - ModalDialog\_\_open
   - ModalDialog\_\_close
 
 - CloseDialogHandle: support custom hydration:
-
   - CloseDialogHandle\_\_bind_dom
 
 ### Patch Changes
