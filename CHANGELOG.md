@@ -1,5 +1,17 @@
 # @ctx-core/dialog-ui-solid
 
+## 2.3.239
+
+### Patch Changes
+
+- chore: migrate scripts from pnpm to bun
+- Updated dependencies
+  - ctx-core@7.2.34
+  - @ctx-core/dom@15.3.104
+  - @ctx-core/nanostores@10.0.159
+  - @ctx-core/solid-js@1.5.219
+  - @ctx-core/ui-solid@21.0.225
+
 ## 2.3.238
 
 ### Patch Changes
